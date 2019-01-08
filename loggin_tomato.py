@@ -51,7 +51,7 @@ if date+".txt" in os.listdir(os.getcwd()):
 else:
     f = open(date+".txt", "w")
 f.write("Time\tTasks\n")
-for i in range(len(logging)/2):
+for i in range(int(len(logging)/2)):
     step = i*2+1
     f.write("{}\t{}\n".format(logging[step-1], logging[step]))
 
